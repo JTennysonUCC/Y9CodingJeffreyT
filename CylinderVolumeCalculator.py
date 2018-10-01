@@ -1,4 +1,5 @@
 import tkinter as tk
+import math
 
 def sumbit():
 
@@ -7,8 +8,13 @@ def sumbit():
 	h = float(enth.get())
 
 	output.config(state="normal")
-	output.insert(tk.INSERT,v)
+
+	outputValue = "Given\nradius:"+str(r)" units\nheight:"+str(h)+" units\nThe volume is:"+str(v)+" units cubed\n"
+
+	output.insert(tk.INSERT,outputValue)
 	output.config(state="disabled")
+
+
 
 v = math.pi*r*r*h
 v = round(v,3)
