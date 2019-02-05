@@ -1,23 +1,23 @@
 import tkinter as tk
 import math
 
-def submit():
+def sumbit():
 
-	print("Submit")
+	print("Submit pressed")
 	r = float(entr.get())
 	h = float(enth.get())
 
-	v = math.pi*r*r*h
-	v = round(v,3)
-
-
 	output.config(state="normal")
+
+	outputValue = "Given\nradius:"+str(r)" units\nheight:"+str(h)+" units\nThe volume is:"+str(v)+" units cubed\n"
+
 	output.insert(tk.INSERT,outputValue)
-	output.config(state=disabled)
+	output.config(state="disabled")
 
 
-	outputValue = "Given\nradius:"+str(r)+"units\nheight:"+str(h)+"units\nThe volume is:"+str(v)+"units\n"
 
+v = math.pi*r*r*h
+v = round(v,3)
 
 root = tk.Tk()
 root.title("volume of a cylinder")

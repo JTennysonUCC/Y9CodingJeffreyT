@@ -2,7 +2,7 @@ import tkinter as tk
 
 root = tk.Tk()
 
-label = tk.Label(root, text = "Grid")
+label = tk.Label(root, text = "Grid", font = ("comic sans",20))
 label.grid(row = 0, column = 0, columnspan = 2)
 
 btn1 = tk.Button(root, text = "oof")
